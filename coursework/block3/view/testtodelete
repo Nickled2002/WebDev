@@ -1,0 +1,65 @@
+<?php/*
+		//  set up the request
+		$request = new stdClass();
+		$request -> jsonrpc = "2.0" ;
+		$request -> method = "getAll" ;
+		$request -> id = "510572" ;
+		$txt = json_encode($request) ;
+		echo $txt.'<br/><br/>' ;
+
+		//  set up for the curl
+		// $url = "localhost/mayar.abertay.ac.uk/cmp306/jsonrpc/index.php" ;
+		$url = "https:///mayar.abertay.ac.uk/~2001975/cmp306/api/block3/index.php" ;
+		$ch = curl_init($url) ;
+		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+		$headers = array (
+			'Content-Type: application/json', 
+			'Content-Length: ' . strlen($txt) ) ;
+		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers) ;
+		curl_setopt($ch, CURLOPT_POSTFIELDS, $txt);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		$response = curl_exec($ch);
+		curl_close($ch) ;
+		echo '<div class = "row">';
+		$itemtxt =json_decode($response);
+		$item = $itemtxt->result;
+		//  display the result of the call
+
+		for ($i=0; $i< sizeof($item); $i++) {
+			$check = $item[$i] ->state;
+			$checktxt =json_decode($check);
+			for ($x=0; $x<sizeof($check); $x++;)
+			{
+				if($checktxt[$x] ->led == 'RED')
+				{
+					$red=$checktxt[$x] -> state;
+
+				}else
+				{
+					if($checktxt[$x] ->led == 'GREEN')
+				{
+					$green=$checktxt[$x] -> state;
+
+				}
+   				}
+			}
+			$id = $item[$i]-> id;
+			for ($y=0; $y< sizeof($checktxt); $y++) {
+				if ($checktxt[$y] ->led == "RED")
+				{
+				echo '<div class="col-lg-4 col-md-4 col-sm-4">' ;
+				echo '<div class="card">' ;
+				echo '<div class="card-header">' ;
+				echo '<h3>Red Led</h3>';
+				echo '</div>' ;
+				echo '<div class="card-block">' ;
+				echo '</div>' ;
+				echo '<div class="card-footer">' ;
+				echo '<a href="MoreDeets.php?id=',urlencode($id),'" class="btn btn-primary">More Details</a>' ;
+				echo '</div>' ;
+				echo '</div>' ;
+				echo '</div>' ;
+				}
+			}
+		}*/
+		?>

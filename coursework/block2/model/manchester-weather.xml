@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<current>
+<city id="2643123" name="Manchester">
+<coord lon="-2.2374" lat="53.4809"/>
+<country>GB</country>
+<timezone>0</timezone>
+<sun rise="2022-12-09T08:12:32" set="2022-12-09T15:50:12"/>
+</city>
+<temperature value="274.05" min="272.58" max="275.07" unit="kelvin"/>
+<feels_like value="274.05" unit="kelvin"/>
+<humidity value="87" unit="%"/>
+<pressure value="1007" unit="hPa"/>
+<wind>
+<speed value="1.03" unit="m/s" name="Calm"/>
+<gusts value="1.02"/>
+<direction value="215" code="SW" name="Southwest"/>
+</wind>
+<clouds value="10" name="few clouds"/>
+<visibility value="10000"/>
+<precipitation mode="no"/>
+<weather number="800" value="clear sky" icon="01n"/>
+<lastupdate value="2022-12-09T16:40:35"/>
+</current>
