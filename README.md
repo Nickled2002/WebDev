@@ -1,5 +1,5 @@
 # WebDev
-This project contains coursework projects for my Web Services Development class.
+This project contains multiple coursework projects for my Web Services Development class.
 # Block 1
 An E-commerce site using multiple api's for item managment operations, order managment, and including a mock payment api
 This system allows a user to buy an item off the wesite and order it to a desired adress and an admin to manage said items and manage the successful orders.
