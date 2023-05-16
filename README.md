@@ -1,5 +1,6 @@
 # WebDev
 This project contains multiple coursework projects for my Web Services Development class.
+This Project also uses open weather api and google api for certain functions both api keys have been disabled.
 # Block 1
 An E-commerce site using multiple api's for item managment operations, order managment, and including a mock payment api
 This system allows a user to buy an item off the wesite and order it to a desired adress and an admin to manage said items and manage the successful orders.
